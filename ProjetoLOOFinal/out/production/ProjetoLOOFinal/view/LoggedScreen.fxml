@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoggedController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="261.0" prefWidth="600.0">
+         <children>
+            <Label text="Nome do dono do animal">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <TextField fx:id="tfNomeUsuario" accessibleText="Nome de dono do animal" alignment="CENTER">
+               <VBox.margin>
+                  <Insets left="150.0" right="150.0" />
+               </VBox.margin></TextField>
+            <Label text="Nome do seu pet">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <TextField fx:id="tfNomePet" accessibleText="Nome do seu animal" alignment="CENTER">
+               <VBox.margin>
+                  <Insets left="150.0" right="150.0" />
+               </VBox.margin></TextField>
+            <Label text="Seu pet é um:" />
+            <ComboBox fx:id="combo_raca" accessibleText="Selecionar espécie do animal" prefWidth="150.0" promptText="teste" />
+            <Label text="Ano de Nascimento" />
+            <ComboBox fx:id="combo_data" prefWidth="150.0" />
+            <Button fx:id="botaoCadastro" accessibleText="Botão para cadastro" alignment="CENTER" mnemonicParsing="false" onAction="#realizaCadastro" style="-fx-border-color: green;" text="Cadastrar">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin></Button>
+            <Separator prefWidth="200.0" />
+            <Button fx:id="botaoCancelar" accessibleText="Botão para cancelar o cadastro" mnemonicParsing="false" onAction="#cancelaCadastro" style="-fx-border-color: red;" text="Cancelar">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</FlowPane>

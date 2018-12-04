@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Cadastrado">
+   <children>
+      <AnchorPane layoutX="307.0" layoutY="86.0" style="-fx-background-color: lightblue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="botaoCadastrado" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="188.0" mnemonicParsing="false" onAction="#trocaTela" style="-fx-background-color: lightblue;" text="Cadastrado!" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="130.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="62.0" prefWidth="128.0" text="Clique para sair" textFill="RED">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
